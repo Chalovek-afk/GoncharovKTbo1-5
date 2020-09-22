@@ -1,0 +1,13 @@
+#include <stdio.h>
+//write 2 numbers. Vivedi menshee
+int main() {
+	int a, b, c;
+	scanf_s("%d %d", &a, &b);
+	if (a < b) {
+		c = a;
+	}
+	else {
+		c = b;
+	}
+	printf("%d", c);
+}
