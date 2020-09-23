@@ -1,0 +1,15 @@
+#include <stdio.h>
+//Numbers of Fibonachi
+
+int main(){
+int a=0,b=1, c, n;
+printf("Write N\n");
+scanf("%d", &n);
+printf("%d\n%d\n", a, b);
+for (int i=3;a+b<=n;i++){
+  printf("%d\n", a+b);
+  c = b;
+  b = a + b;
+  a = c;
+}
+}
