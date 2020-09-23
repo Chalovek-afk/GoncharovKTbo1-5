@@ -8,10 +8,12 @@ scanf("%d %d %d", &x,&y,&z);
 printf("Write size of dirka\n");
 scanf("%d %d", &u,&v);
 /*Chekaem vhodit li po ploshadi lubaya iz storon*/
-if (x*y<u*v || x*z<u*v || y*z<u*v){
+if ((x<u && y<v) || (x<v && y<u) || (x<u && z<v) || (x<v && z<u) || (y<v && z<u) || (z<u && y<v))
+{
   printf("S kaifom vhodit");
 }
-else {
+else
+{
   printf("Vashe ne vhodit ;с");
 }
 return 0;
