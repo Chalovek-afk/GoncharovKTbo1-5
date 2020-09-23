@@ -1,0 +1,18 @@
+#include <stdio.h>
+//kirpich and dirka
+
+int main () {
+int x,y,z,u,v;
+printf("Write size of kirpich\n");
+scanf("%d %d %d", &x,&y,&z);
+printf("Write size of dirka\n");
+scanf("%d %d", &u,&v);
+/*Chekaem vhodit li po ploshadi lubaya iz storon*/
+if (x*y<u*v || x*z<u*v || y*z<u*v){
+  printf("S kaifom vhodit");
+}
+else {
+  printf("Vashe ne vhodit ;с");
+}
+return 0;
+}
